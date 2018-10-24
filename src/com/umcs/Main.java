@@ -34,5 +34,14 @@ public class Main {
         System.out.println(magazyn.pobierzWartoscPoOpodatkowaniu(Przedmiot::okreslWartosc));
         System.out.println(magazyn.pobierzWartoscPoOpodatkowaniu(fra.pobierzPodatekLiniowy()));
         System.out.println(magazyn.pobierzWartoscPoOpodatkowaniu(fra.pobierzPodatekProgresywny()));
+        System.out.println(magazyn.pobierzWartoscPoOpodatkowaniu(fra.pobierzPodatekProgresywny()));
+
+        System.out.println("Wartosci:");
+        System.out.println("Z EURO na dolary:");
+        System.out.println(new AdapterEuroNaDolary().przelicz(magazyn.pobierzWartoscPoOpodatkowaniu(Przedmiot::okreslWartosc)));
+
+        System.out.println("Z EURO na złotówki:");
+        System.out.println(new AdapterEuroNaZlotowki().przelicz(magazyn.pobierzWartoscPoOpodatkowaniu(Przedmiot::okreslWartosc)));
+
     }
 }
