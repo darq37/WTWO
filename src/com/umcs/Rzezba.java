@@ -1,20 +1,12 @@
 package com.umcs;
 
 public class Rzezba implements Przedmiot {
-    private Integer rokWykonania;
-    private Double rozmiarRzezby;
+    private final Integer rokWykonania;
+    private final Double rozmiarRzezby;
 
     public Rzezba(Integer rokWykonania, Double rozmiarRzezby) {
         this.rokWykonania = rokWykonania;
         this.rozmiarRzezby = rozmiarRzezby;
-    }
-
-    public Integer getRokWykonania() {
-        return rokWykonania;
-    }
-
-    public void setRokWykonania(Integer rokWykonania) {
-        this.rokWykonania = rokWykonania;
     }
 
     /**
@@ -27,7 +19,4 @@ public class Rzezba implements Przedmiot {
         return (2020 - rokWykonania) * rozmiarRzezby * 2;
     }
 
-    public void setRozmiarRzezby(Double rozmiarRzezby) {
-        this.rozmiarRzezby = rozmiarRzezby;
-    }
 }

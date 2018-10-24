@@ -1,17 +1,9 @@
 package com.umcs;
 
 public class Obraz implements Przedmiot {
-    private Integer rokNamalowania;
+    private final Integer rokNamalowania;
 
     public Obraz(Integer rokNamalowania) {
-        this.rokNamalowania = rokNamalowania;
-    }
-
-    public Integer getRokNamalowania() {
-        return rokNamalowania;
-    }
-
-    public void setRokNamalowania(Integer rokNamalowania) {
         this.rokNamalowania = rokNamalowania;
     }
 

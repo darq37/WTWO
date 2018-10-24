@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Magazyn {
-    private List<Przedmiot> spis = new LinkedList<>();
+    private final List<Przedmiot> spis = new LinkedList<>();
 
     public void dodajDoSpisu(Przedmiot przedmiot) {
         spis.add(przedmiot);

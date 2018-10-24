@@ -1,40 +1,11 @@
 package com.umcs;
 
 public class Ksiazka implements Przedmiot {
-    private String name; //deklarujemy atrybuty
-    private Integer nrWydania;
-    private Integer rokWydania;
+    private final Integer nrWydania;
+    private final Integer rokWydania;
 
-    public Ksiazka(String name, Integer rokWydania, Integer nrWydania) {
-        this.name = name;
+    public Ksiazka(Integer rokWydania, Integer nrWydania) {
         this.rokWydania = rokWydania;
-        this.nrWydania = nrWydania;
-    }
-
-    public Ksiazka() {
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Integer getRokWydania() {
-        return rokWydania;
-    }
-
-    public void setRokWydania(Integer rokWydania) {
-        this.rokWydania = rokWydania;
-    }
-
-    public Integer getNrWydania() {
-        return nrWydania;
-    }
-
-    public void setNrWydania(Integer nrWydania) {
         this.nrWydania = nrWydania;
     }
 
