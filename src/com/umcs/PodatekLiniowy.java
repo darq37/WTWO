@@ -1,6 +1,12 @@
 package com.umcs;
 
 public class PodatekLiniowy implements Podatek {
+    private double podatek;
+
+    public PodatekLiniowy(double podatek) {
+        this.podatek = podatek;
+    }
+
     /**
      * Mająć przedmiot, podaj wartość przedmiotu po opodatkowaniu
      *
@@ -9,6 +15,6 @@ public class PodatekLiniowy implements Podatek {
      */
     @Override
     public double execute(Przedmiot przedmiot) {
-        return przedmiot.okreslWartosc() - przedmiot.okreslWartosc() * 19.0 / 100;
+        return przedmiot.okreslWartosc() - przedmiot.okreslWartosc() * podatek / 100;
     }
 }
